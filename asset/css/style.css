@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500&family=Poppins:ital,wght@0,400;0,600;0,700;1,700&display=swap');
+@font-face{
+  font-family: "Gotham-Black";
+  src: url('Gotham-Black.otf');
+}
+:root{
+  --primary-color: #FFCF00;
+  --secound-color: #1c1c1c;
+}
+*, html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+nav{
+  background-color: var(--primary-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.container-navbar{
+  display: flex;
+  padding: .5rem 1.1rem;
+  height: 3.7rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+.wrapper-navbar{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: absolute;
+}
+.container-navbar .img-brand{
+  width: 10%;
+}
+.humberger{
+  cursor: pointer;
+}
+.container-navbar .humberger i{
+  font-size: 2.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* SIDEBAR STYLE */
+.container-sidebar{
+  width: 100%;
+  background-color: rgba(0,0,0,.6);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.container-sidebar.active{
+  transform: scaleX(1);
+  opacity: 1;
+}
+.side-bar{
+  position: fixed;
+  z-index: 21000;
+  background-color: var(--primary-color);
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100vh;
+  transition: all 0.3s ease;
+  /* transform-origin: right; */
+  /* transform: scaleX(0); */
+  transform: translateX(100%);
+}
+.side-bar.active2{
+  /* transform: scaleX(1); */
+  transform: translateX(0);
+}
+.side-bar i{
+  font-size: 1.8rem;
+  float: right;
+  font-weight: 600;
+  cursor: pointer;
+  padding: .5rem;
+}
+.side-bar ul{
+  list-style-type: none;
+  margin-top: 4rem;
+  padding-left: 1.8rem;
+}
+.side-bar ul li{
+  margin-top: .5rem;
+}
+.side-bar ul li a{
+  font-size: 1.3rem;
+  color: black;
+  font-family: "Gotham-Black";
+  text-transform: uppercase;
+  user-select: none;
+  cursor: pointer;
+  font-style: italic;
+}
+
+
+
+
+/* GRITTING SELECTOR */
+.container-gritting{
+  width: 100%;
+  height: 400px;
+  background-image: url('/asset/img/home-main-banner.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.wrapper-gritting{
+  background-color: rgba(0,0,0,.5);
+  height: 100%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.konten{
+  width: 90%;
+}
+.wrapper-gritting .konten h1{
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Gotham-Black";
+  margin-bottom: 5px;
+}
+.wrapper-gritting .konten h2{
+  color: var(--primary-color);
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: "Gotham-Black";
+  margin-bottom: 10px;
+}
+.wrapper-gritting .konten p{
+  color: white;
+  font-family: "Poppins",Sans-Serif;
+  font-size: 12px;
+}
+.wrapper-gritting a{
+  text-align: center;
+  position: absolute;
+  bottom: -1.5rem;
+}
+.wrapper-gritting img{
+  width: 300px;
+  height: 147px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* PROFILE SELECTOR */
+.profile{
+  width: 100%;
+  height: 450px;
+  background-image: url('/asset/img/home-second-banner.png');
+  background-position: center;
+  background-size: cover;
+}
+.profile .wrapper-profile{
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(255,207,0,.8);*/
+  background-color: rgba(215,182,16,.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.7rem .5rem;
+}
+.wrapper-profile .main-profile-content h1{
+  font-size: 25px;
+  font-family: 'Gotham-Black';
+  font-weight: 400;
+  color: black;
+  font-style: italic;
+  margin-left: 1rem;
+}
+.wrapper-profile .main-profile-content h2{
+  font-size: 25px;
+  font-family: 'Gotham-Black';
+  font-weight: 400;
+  color: white;
+  margin-left: 1rem;
+}
+
+.wrapper-profile .main-profile-text{
+  margin-top: 1rem;
+}
+.main-profile-text p{
+  font-size: 11px;
+  font-family: 'Poppins', Sans-Serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.main-profile-text p span{
+  color: black;
+  font-weight: bold;
+}
+
+
+/* MISI STYLE */
+.container-misi{
+  width: 100%;
+  height: 380px;
+  background-image: url('/asset/img/main-bg.png');
+  background-position: center;
+  background-size: cover;
+  padding: 1rem 3.2rem;
+  position: relative;
+  text-align: center;
+}
+.container-misi::after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(28,28,28,.9);
+  background-image: linear-gradient(#1c1c1c 70%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.wrapper-misi{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-misi h1{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Gotham-Black';
+  font-weight: 400;
+  font-style: italic;
+}
+.container-misi span{
+  color: var(--primary-color);
+}
+.container-misi p{
+  font-size: 11px;
+  font-family: 'Poppins', Sans-Serif;
+  color: white;
+  text-transform: capitalize;
+}
+
+
+/* GAMEPLAY HIGHLIGHT */
+.container-gameplay{
+  width: 100%;
+  height: 500px;
+  background-image: url('/asset/img/home-third-banner.png');
+  background-position: center;
+  background-size: cover;
+}
+.wrapper-gameplay{
+  padding: 1rem 5rem;
+  display: flex;
+  text-align: center;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(215,182,16,.8);
+}
+/* .content-gameplay{
+  width: 90%;
+} */
+.container-gameplay .content-gameplay h1{
+  font-size: 25px;
+  font-family: 'Gotham-Black';
+  font-weight: 400;
+  font-style: italic;
+  color: #333333;
+  margin-right: 5px;
+}
+.text-header{
+  display: flex;
+}
+.text-header h2{
+  font-size: 30px;
+  font-family: 'Gotham-Black';
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+}
+.content-gameplay .img-box-game{
+  width: 98%;
+  margin: 28px auto 10px;
+  height: 210px;
+  background-image: url('/asset/img/gameplay.png');
+  background-position: center;
+  background-size: cover;
+}
+.content-gameplay p{
+  font-size: 13px;
+  color: #333333;
+  font-family: 'Gotham-Black';
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.content-gameplay span{
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Poppins', Sans-Serif;
+  text-transform: capitalize;
+}
+
+
+/* FOOTER */
+footer{
+  width: 100%;
+  background-color: var(--secound-color);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 4rem;
+}
+.container-footer{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.container-footer a{
+  display: block;
+  margin-top: .6rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: 'Gotham-Black';
+}
+.sosial{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.3rem;
+}
+.sosial a{
+  font-size: 1.8rem;
+  margin: .3rem;
+  transition: all .3s ease;
+}
+.sosial a:hover{
+  color: var(--primary-color);
+}
+.full-logo{
+  margin: 1.4rem auto;
+  width: 56%;
+  height: 40px;
+}
+.container-footer p{
+  font-size: 10px;
+  font-family: 'Poppins',Sans-Serif;
+  margin-top: 4px;
+  color: white;
+  font-weight: 400;
+}
