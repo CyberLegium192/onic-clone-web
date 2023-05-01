@@ -22,32 +22,5 @@ document.addEventListener("click", function(e) {
 })
 
 
-const ml = document.querySelector('.mlbb-click')
-const pubg = document.querySelector('.pubg-click')
-const ff = document.querySelector('.ff-click')
 
-function mlcta(){
-  ml.classList.add('memek')
-  pubg.classList.remove('memek')
-  ff.classList.remove('memek')
-  document.querySelector('.mlbb').classList.add('card-player-active')
-  document.querySelector('.pubg').classList.remove('card-player-active')
-  document.querySelector('.ff').classList.remove('card-player-active')
-}
-function pubgcta(){
-  ml.classList.remove('memek')
-  pubg.classList.add('memek')
-  ff.classList.remove('memek')
-  document.querySelector('.mlbb').classList.remove('card-player-active')
-  document.querySelector('.pubg').classList.add('card-player-active')
-  document.querySelector('.ff').classList.remove('card-player-active')
-}
-function ffcta(){
-  ml.classList.remove('memek')
-  pubg.classList.remove('memek')
-  ff.classList.add('memek')
-  document.querySelector('.mlbb').classList.remove('card-player-active')
-  document.querySelector('.pubg').classList.remove('card-player-active')
-  document.querySelector('.ff').classList.add('card-player-active')
-}
 

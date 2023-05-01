@@ -6,6 +6,7 @@
 :root{
   --primary-color: #FFCF00;
   --secound-color: #1c1c1c;
+  --font: "Gotham-Black";
 }
 *, html{
   padding: 0;

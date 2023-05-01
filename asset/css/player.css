@@ -91,15 +91,22 @@
 .card-player-active{
   display: flex !important;
 }
-.mlbb, .pubg, .ff{
+.mlbb{
   display: none;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s;
+  animation: tabs 0.3s ease-in-out;
 }
-.pubg{
-  padding-top: 80px;
+@keyframes tabs{
+  from{
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .player-card{
   z-index: 2;

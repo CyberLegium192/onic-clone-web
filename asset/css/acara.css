@@ -1,0 +1,119 @@
+.container-schedule{
+  width: 100%;
+  padding-bottom: 5rem;
+  /* background-color: var(--secound-color); */
+  background-image: url('/asset/img/main-bg.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.container-schedule::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1c;
+  top: 0;
+  opacity: 0.8;
+  left: 0;
+  z-index: 1;
+}
+.ml-schedule{
+  display: none;
+  z-index: 20;
+  animation: tabs 0.3s ease-in-out;
+}
+@keyframes tabs{
+  from{
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.ml-schedule.card-active{
+  display: block;
+}
+.card-history-game{
+  width: 430px;
+  position: relative;
+  height: 146px;
+  margin: 0px auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secound-color);
+  gap: 10px;
+  z-index: 10;
+  padding: 10px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card-history-game:nth-child(odd)::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #424242;
+  opacity: .7;
+}
+.onic-box{
+  z-index: 2;
+  display: flex;
+  width: 33%;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  gap: 7px;
+  font-family: "Poppins", Sans-Serif;
+}
+.onic-box img{
+  width: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+.onic-box p{
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 10px;
+}
+.onic-box h1{
+  font-family: "Poppins",Sans-Serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+.mid-board-history{
+  font-family: "Poppins", Sans-Serif;
+  padding: 5px;
+  z-index: 2;
+  text-align: center;
+}
+.mid-board-history h3{
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+.mid-board-history button{
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: 800;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #6dba00;
+  border-radius: 13px;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 15px;
+}
+.mid-board-history p{
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+}
