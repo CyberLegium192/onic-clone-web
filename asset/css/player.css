@@ -1,7 +1,7 @@
 .container-our{
   /*background-image: url('/asset/img/player/players-first-banner.png');*/
   width: 100%;
-  height: 470px;
+  height: 500px;
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   padding-left: 4rem;
   position: relative;
   /* background-color: var(--secound-color); */
-  border-bottom: 10px solid var(--secound-color);
+  /* border-bottom: 10px solid var(--secound-color);     */
   z-index: 4;
 }
 .container-our img{
@@ -71,7 +71,7 @@
 /* PLAYER CARD ONIC */
 .container-player{
   /* background-color: var(--secound-color); */
-  background-image: url('/asset/img/main-bg.png');
+  background-image: url('https://www.onic-esports.com/static/media/main-bg.69d901a8833d699dd8dd.png');
   background-position: center;
   background-size: cover;
   padding-bottom: 80px;
@@ -93,6 +93,8 @@
 }
 .mlbb{
   display: none;
+  margin-top: -5rem;
+  padding-top: 3rem;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;

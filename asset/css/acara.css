@@ -2,7 +2,7 @@
   width: 100%;
   padding-bottom: 5rem;
   /* background-color: var(--secound-color); */
-  background-image: url('/asset/img/main-bg.png');
+  background-image: url('https://www.onic-esports.com/static/media/main-bg.69d901a8833d699dd8dd.png');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -16,7 +16,7 @@
   top: 0;
   opacity: 0.8;
   left: 0;
-  z-index: 1;
+  z-index: -1;
 }
 .ml-schedule{
   display: none;
@@ -116,4 +116,60 @@
   font-size: 10px;
   font-weight: 700;
   color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-achivement{
+  width: 100%;
+  padding-bottom: 5rem;
+  background-color: var(--primary-color-color);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* ACHIVMENT STYLE */
+.galery-box{
+  width: 400px;
+  height: 300px;
+  background-color: var(--secound-color);
+  margin: 1px auto 26px;
+  border-radius: 10px;
+  z-index: 5;
+  overflow: hidden;
+}
+.text-header-galery{
+  color: white;
+  padding: 3px 15px;
+  font-size: 10px;
+  font-weight: 600;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", Sans-Serif;
+  text-transform: capitalize;
+}
+.box-image-galery{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-image-galery img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }

@@ -120,7 +120,7 @@ nav{
 .container-gritting{
   width: 100%;
   height: 400px;
-  background-image: url('/asset/img/home-main-banner.png');
+  background-image: url('https://www.onic-esports.com/static/media/home-main-banner.1f21c1542259bfd7e2a2.png');
   background-position: center;
   background-size: cover;
   position: relative;
@@ -176,7 +176,7 @@ nav{
 .profile{
   width: 100%;
   height: 450px;
-  background-image: url('/asset/img/home-second-banner.png');
+  background-image: url('https://www.onic-esports.com/static/media/home-second-banner.7ae2366fd021dfff6f16.png');
   background-position: center;
   background-size: cover;
 }
@@ -226,7 +226,7 @@ nav{
 .container-misi{
   width: 100%;
   height: 380px;
-  background-image: url('/asset/img/main-bg.png');
+  background-image: url('https://www.onic-esports.com/static/media/main-bg.69d901a8833d699dd8dd.png');
   background-position: center;
   background-size: cover;
   padding: 1rem 3.2rem;
@@ -275,7 +275,7 @@ nav{
 .container-gameplay{
   width: 100%;
   height: 500px;
-  background-image: url('/asset/img/home-third-banner.png');
+  background-image: url('https://www.onic-esports.com/static/media/home-third-banner.f5a6b31bf2249fc0dc5e.png');
   background-position: center;
   background-size: cover;
 }
@@ -309,13 +309,14 @@ nav{
   font-style: italic;
   color: #ffffff;
 }
-.content-gameplay .img-box-game{
+  .content-gameplay .img-box-game{
   width: 98%;
   margin: 28px auto 10px;
   height: 210px;
-  background-image: url('/asset/img/gameplay.png');
+  background-image: url('https://www.onic-esports.com/static/media/highlight-onic-x-rog.4c684d2ad8bb6a3d7cc2.jpeg');
   background-position: center;
   background-size: cover;
+  border-radius: 6px;
 }
 .content-gameplay p{
   font-size: 13px;
