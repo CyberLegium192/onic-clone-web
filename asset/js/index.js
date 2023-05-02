@@ -23,4 +23,7 @@ document.addEventListener("click", function(e) {
 
 
 
-
+const sponsorButton = document.querySelector('.become-sponsor')
+sponsorButton.onclick = () =>{
+  window.open('mailto:IniHanyaPengetesanSaja@gmail.com')
+}
